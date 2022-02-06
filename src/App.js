@@ -18,7 +18,11 @@ const App = () => {
         name='Dave'
         role='bass'
         age={20}
-        />
+        albums={[
+          'The Stooges',
+          'Fun House'
+        ]}
+      />
       <Greeting 
         name='Ron'
         role='guitar'

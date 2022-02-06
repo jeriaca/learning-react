@@ -16,6 +16,11 @@ const Greeting = (props) => {
         <h3>
             If {props.name} is still alive, he is approximately {props.age + (2021-1967)} years old.
         </h3>
+        <h3>{props.name} contributed to these albums:</h3>
+        <ul>
+            {props.albums && props.albums.map(x => <li>{x}</li>)}
+            {!props.albums && <li>Check back later.</li>}
+        </ul>
       </>
     );
   };
