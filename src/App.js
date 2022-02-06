@@ -20,6 +20,7 @@ const App = () => {
         age={20}
         albums={[
           'The Stooges',
+          'Fun House',
           'Fun House'
         ]}
       />
