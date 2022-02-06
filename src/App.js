@@ -6,16 +6,13 @@ const App = () => {
   return (
     <>
       <h1>
-        good day
+        Hello, Stooges!
       </h1>
       
-      <h1>
-        doodles!
-      </h1>
-      <Greeting/>
-      <Greeting/>
-      <Greeting/>
-      <Greeting/>
+      <Greeting name='Iggy (vocals)'/>
+      <Greeting name='Dave (bass)'/>
+      <Greeting name='Ron (guitar)'/>
+      <Greeting name='Scott (drums)'/>
     </>
   );
 };
