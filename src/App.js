@@ -9,10 +9,26 @@ const App = () => {
         Hello, Stooges!
       </h1>
       
-      <Greeting name='Iggy (vocals)'/>
-      <Greeting name='Dave (bass)'/>
-      <Greeting name='Ron (guitar)'/>
-      <Greeting name='Scott (drums)'/>
+      <Greeting 
+        name='Iggy'
+        role='vocals'
+        age={20}
+        />
+      <Greeting 
+        name='Dave'
+        role='bass'
+        age={20}
+        />
+      <Greeting 
+        name='Ron'
+        role='guitar'
+        age={19}
+        />
+      <Greeting 
+        name='Scott'
+        role='drums'
+        age={18}
+        />
     </>
   );
 };
