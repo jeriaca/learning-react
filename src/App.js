@@ -3,9 +3,24 @@ import './App.css';
 import Greeting from './Greeting';
 
 const App = () => {
+  const styles = {
+    container: {
+      padding: 30
+      //If seconds are even, make bg orange. If odd, make magenta
+      , backgroundColor: new Date().getSeconds() % 2 === 0 ? 'orange' : 'magenta'
+    }
+    , heading: {
+        textTransform: 'uppercase'
+    }
+  };
+
   return (
-    <>
-      <h1>
+    <div
+      style={styles.container}
+    >
+      <h1
+        style={styles.heading}  
+      >
         Hello, Stooges!
       </h1>
       
@@ -34,7 +49,7 @@ const App = () => {
         role='drums'
         age={18}
         />
-    </>
+    </div>
   );
 };
 
